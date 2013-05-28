@@ -1,0 +1,44 @@
+@import "less/logo.less";
+@import "less/variables.less";
+@import "less/mixins.less";
+
+@import "less/reset/base.less";
+@import "less/reset/list.less";
+@import "less/reset/table.less";
+@import "less/reset/form.less";
+@import "less/reset/misc.less";
+@import "less/reset/html5.less";
+
+@import "less/typography/body.less";
+@import "less/typography/link.less";
+
+.x-dropdown {
+    .box-shadow(0 5px 10px rgba(0, 0, 0, 0.2));
+    position: absolute;
+    z-index: 1000;
+    max-height: 300px;
+    background-color: @backgroundColor;
+	display: none;
+}
+.x-blank {
+	height: 10px;
+	display: block;
+	visibility: hidden;
+	color: @white;
+}
+
+.x-debug {
+	background: #C03!important;
+	color: #fff!important;
+}
+.x-info {
+	color: @infoTextColor!important;
+}
+
+.x-warning {
+	color: @warningTextColor!important;
+}
+
+.x-error {
+	color: @errorTextColor!important;
+}
